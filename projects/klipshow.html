@@ -1,0 +1,305 @@
+---
+layout: default
+title: Klipshow
+project_name: Klipshow
+logo: /assets/images/klipshow-logo.png
+description: >
+  A tool for Twitch streamers that lets viewers pay to trigger approved short clips from social platforms. Streamers control the queue — Klipshow never sells or hosts the content itself.
+episodes:
+  - title: "Building ClipShow Episode 1: Rails 8 + Docker + Twitch OAuth Setup"
+    youtube_id: "VFM-3nU6b4E"
+    description: >
+      In this first episode, we build the complete authentication foundation for KlipShow — a Twitch platform where viewers pay to trigger social media clips on stream. Includes full Twitch OAuth, JWT session management, Vite + React + Tailwind setup, and backend tests.
+    tech_stack:
+      - Ruby on Rails 8.0.2
+      - Docker & PostgreSQL
+      - React with Vite Ruby
+      - Tailwind CSS
+      - OmniAuth
+      - RSpec testing
+    highlights:
+      - Setting up modern Rails development environment
+      - Tricky Vite Ruby + React integration (solved!)
+      - Real OAuth flow with Twitch API
+      - Professional testing practices from day one
+    timestamps:
+      - label: "00:00 – Introduction"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=0s"
+      - label: "02:15 – Application/Mockup Overview"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=135s"
+      - label: "05:34 – Episode 1 Outline"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=334s"
+      - label: "08:36 – RVM/Ruby/Rails Install"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=516s"
+      - label: "13:02 – Generate Rails App + Docker Setup"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=782s"
+      - label: "19:53 – Twitch OAuth Overview"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=1193s"
+      - label: "25:32 – Rails Credentials Setup"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=1532s"
+      - label: "27:13 – Rails Routes Overview"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=1633s"
+      - label: "28:36 – OAuth Controller Setup"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=1716s"
+      - label: "42:44 – User Record Setup"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=2564s"
+      - label: "47:22 – Encrypted Token Migration"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=2842s"
+      - label: "52:10 – User Creation from OAuth + RSpec"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=3130s"
+      - label: "59:45 – JWT Overview"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=3585s"
+      - label: "1:02:40 – First Commit"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=3760s"
+      - label: "1:04:30 – Frontend System Design"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=3870s"
+      - label: "1:06:30 – Vite Integration"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=3990s"
+      - label: "1:11:21 – TailwindCSS Installation"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=4281s"
+      - label: "1:11:52 – React Setup"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=4312s"
+      - label: "1:18:59 – Klipshow Lore"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=4739s"
+      - label: "1:19:18 – Simplify Signin Component"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=4758s"
+      - label: "1:19:59 – Client-Side OAuth Setup"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=4799s"
+      - label: "1:26:11 – Outro"
+        link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=5171s"
+  - title: "Building ClipShow Episode 2: Dashboard Architecture + Clips System + Database Design"
+    youtube_id: "ZxOR8sH5WsU"
+    description: >
+      In this power-packed episode, we build the core dashboard infrastructure and complete clips management system for ClipShow — where Twitch viewers pay real money to display social media clips on live streams!
+    tech_stack:
+      - Ruby on Rails 8.0.2
+      - Docker with HMR
+      - React + Vite Ruby
+      - Tailwind CSS
+      - Turbo for SPA-like experience
+      - PostgreSQL with advanced associations
+      - Cuprite for system testing
+      - React-Toastify for notifications
+    highlights:
+      - "Multiple strategic pivots: SCSS → Tailwind, localStorage → cookies"
+      - Advanced Rails associations between clips and streamers
+      - Real-time feedback system with React toast integration
+      - Professional database design for monetized clip system
+      - Docker development environment optimization
+      - Comprehensive testing strategy for payment-integrated features
+    timestamps:
+      - label: "00:00 - Episode introduction"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=0s"
+      - label: "01:00 - Getting dashboard layout working"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=60s"
+      - label: "05:41 - Pivot - moving away from scss"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=341s"
+      - label: "09:15 - getting Hot Module Reloading working with Docker"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=555s"
+      - label: "13:28 - Adding React sidebar component"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=808s"
+      - label: "15:22 - Pivot - moving away from localStorage and to cookies"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=922s"
+      - label: "22:16 - Replacing sidebar React component"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=1336s"
+      - label: "25:15 - Building out Clips view and models"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=1515s"
+      - label: "28:00 - Small pivot to system design detail on approach for dashboard controllers"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=1680s"
+      - label: "29:58 - Adding and wiring up Turbo"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=1798s"
+      - label: "33:13 - Rails partials - adding heading partial"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=1993s"
+      - label: "35:40 - Adding feather icons and other work for clips views"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=2140s"
+      - label: "36:52 - Database design for clips and joins table"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=2212s"
+      - label: "39:53 - Creating migration for new clips tables"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=2393s"
+      - label: "41:45 - Adding strong_migrations gem"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=2505s"
+      - label: "42:30 - Setting up \"Streamer\" using STI"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=2550s"
+      - label: "44:00 - Setting up associations between clips and streamers"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=2640s"
+      - label: "47:16 - Setting up routes and views for Clips"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=2836s"
+      - label: "51:03 - Showing new clip creation process from web"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=3063s"
+      - label: "55:04 - Clip form demo and adding react-toastify"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=3304s"
+      - label: "57:36 - Adding cuprite and system tests"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=3456s"
+      - label: "01:04:53 - Outro"
+        link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=3893s"
+  - title: "Building ClipShow Episode 3: TikTok API Integration + Public Clip Library + Hybrid Architecture"
+    youtube_id: "ilkYtP70s20"
+    description: >
+      In this marathon episode, we achieve a major milestone - building the complete public clip library system for ClipShow where Twitch viewers pay real money to display social media clips on live streams!
+    tech_stack:
+      - Ruby on Rails 8.0.2
+      - TikTok iframe API
+      - React with advanced state management
+      - PostgreSQL with optimized associations
+      - CSRF token security
+      - Turbo with React hybrid approach
+      - RSpec for comprehensive testing
+      - Custom Ajax wrapper service
+    highlights:
+      - "TikTok iframe API replaces complex OAuth - smart architectural decision!"
+      - "Public library vs private collection dual-system architecture"
+      - "Real-time clip validation through iframe loading events"
+      - "Professional security with CSRF tokens on all requests"
+      - "Seamless user experience - add clips without page refreshes"
+      - "Production-ready error handling and validation patterns"
+      - "Advanced Rails nested attributes for complex form submissions"
+    timestamps:
+      - label: "00:00 - Episode introduction and progress overview"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=0s"
+      - label: "03:16 - TikTok iframe API implementation walkthrough"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=196s"
+      - label: "08:45 - Hybrid Rails-React form architecture decisions"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=525s"
+      - label: "15:22 - Building the clip creation workflow with validation"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=922s"
+      - label: "22:30 - CSRF token security implementation"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=1350s"
+      - label: "28:15 - Toast notification system across Rails and React"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=1695s"
+      - label: "35:40 - Database migration changes and relationship optimization"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=2140s"
+      - label: "42:20 - Streamer clip model validations and callbacks"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=2540s"
+      - label: "48:10 - Public clip library vs private collection system"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=2890s"
+      - label: "55:30 - React component architecture for clip cards"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=3330s"
+      - label: "01:02:15 - AJAX requests and state management patterns"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=3735s"
+      - label: "01:08:40 - Turbo integration challenges and solutions"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=4120s"
+      - label: "01:15:25 - Adding clips from library to personal collection"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=4525s"
+      - label: "01:22:10 - Route configuration for dual clip systems"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=4930s"
+      - label: "01:28:50 - Component testing with RSpec and system specs"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=5330s"
+      - label: "01:35:20 - Database cleaner removal and test optimization"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=5720s"
+      - label: "01:42:30 - Model spec coverage for clips and streamer clips"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=6150s"
+      - label: "01:48:15 - Episode wrap-up and next steps"
+        link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=6495s"
+---
+
+<section class="project-detail">
+  <div class="container">
+    <img src="/assets/images/klipshow-black-logo.png" alt="Klipshow Logo" class="project-detail-logo" />
+    <h1>Klipshow</h1>
+    <p class="subtitle">Interactive viewer-driven clip reactions for streamers</p>
+    <div class="project-description">
+      Klipshow is a tool for Twitch streamers that lets viewers pay to trigger approved short clips from YouTube, TikTok, and other platforms.
+    </div>
+    <div class="project-content">
+      <p>Streamers have full control over what clips are allowed, when they play, and how much they cost to trigger. Viewers interact in real time using a queue system that never puts copyrighted content on your channel — we never host or serve the clips.</p>
+      <p>This project shows how we built a creator-friendly revenue tool using Rails, JavaScript, and background jobs — with real payment processing and stream-safe logic.</p>
+    </div>
+
+    <div class="project-cta">
+      <a href="https://twitch.tv/awdjob" class="btn" target="_blank" rel="noopener">
+        <!-- <img src="/assets/images/twitch.png" alt="Twitch" class="btn-icon" /> -->
+        Watch Us Live
+      </a>
+      <a href="https://discord.gg/MvCUVVbYbP" class="btn" target="_blank" rel="noopener">
+        <img src="/assets/images/discord.png" alt="Discord" class="btn-icon" />
+        Join the Community
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="project-episodes">
+  <h2>Episodes</h2>
+  <div class="episode-list">
+    {% for episode in page.episodes %}
+      <div class="episode-card">
+        <h3>{{ episode.title }}</h3>
+
+        {% if episode.description %}
+          <p class="episode-description">{{ episode.description }}</p>
+        {% endif %}
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/{{ episode.youtube_id }}"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- Collapsible details -->
+        <div class="episode-details collapsible-content">
+          {% if episode.tech_stack %}
+            <div class="tech-stack">
+              <h4>Tech Stack</h4>
+              <ul>
+                {% for tech in episode.tech_stack %}
+                  <li>{{ tech }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+
+          {% if episode.highlights %}
+            <div class="highlights">
+              <h4>Key Highlights</h4>
+              <ul>
+                {% for item in episode.highlights %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+
+          {% if episode.timestamps %}
+            <div class="timestamps">
+              <h4>Timestamps</h4>
+              <div class="timestamp-items">
+                {% for timestamp in episode.timestamps %}
+                  <div class="timestamp-item">
+                    <a href="{{ timestamp.link }}" target="_blank" rel="noopener">
+                      {{ timestamp.label }}
+                    </a>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+
+        <button class="btn toggle-details-btn">See More</button>
+      </div>
+
+    {% endfor %}
+
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.toggle-details-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const details = button.previousElementSibling;
+        if (details.classList.contains('expanded')) {
+          details.classList.remove('expanded');
+          button.textContent = 'See More';
+        } else {
+          details.classList.add('expanded');
+          button.textContent = 'See Less';
+        }
+      });
+    });
+  });
+</script>
+

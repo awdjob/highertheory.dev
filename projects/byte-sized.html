@@ -1,0 +1,53 @@
+---
+layout: default
+title: Byte-Sized
+project_name: Byte-Sized
+episodes:
+  - title: "Hosting your own URL shortener is super easy"
+    youtube_id: "RWeIfO1aFGE"
+  - title: "What is a CSRF token and why we use them"
+    youtube_id: "w6iz2jOI14g"
+---
+
+<section class="project-detail">
+  <div class="container">
+    <h1>Byte Sized</h1>
+    <p class="subtitle">Quick and digestible short-form videos</p>
+
+    <div class="project-description">
+      <p>
+        Quick, digestible videos focused on short-form content — all packed into neat cards for easy browsing. These bite-sized videos deliver key insights quickly — perfect for learning on the go or catching up fast.
+      </p>
+    </div>
+
+    <div class="project-cta">
+      <a href="https://twitch.tv/awdjob" class="btn" target="_blank" rel="noopener">
+        Watch Us Live
+      </a>
+      <a href="https://discord.gg/MvCUVVbYbP" class="btn" target="_blank" rel="noopener">
+        <img src="/assets/images/discord.png" alt="Discord" class="btn-icon" />
+        Join the Community
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="project-episodes">
+  <div class="container">
+    <h2>Videos</h2>
+    <div class="episode-list">
+      {% for episode in page.episodes %}
+        <div class="episode-card">
+          <h3>{{ episode.title }}</h3>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/{{ episode.youtube_id }}"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
