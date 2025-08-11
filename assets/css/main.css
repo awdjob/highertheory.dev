@@ -412,9 +412,12 @@ html, body {
 
 .episode-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
 }
 
 .episode-card {
@@ -647,7 +650,6 @@ html, body {
   line-height: 1.6;
   margin-bottom: 1rem;
 }
-
 
 .stream-text {
   flex: 1 1 45%;

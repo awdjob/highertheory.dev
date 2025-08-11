@@ -6,7 +6,7 @@ logo: /assets/images/klipshow-logo.png
 description: >
   A tool for Twitch streamers that lets viewers pay to trigger approved short clips from social platforms. Streamers control the queue — Klipshow never sells or hosts the content itself.
 episodes:
-  - title: "Building ClipShow Episode 1: Rails 8 + Docker + Twitch OAuth Setup"
+  - title: "Building KlipShow Episode 1: Rails 8 + Docker + Twitch OAuth Setup"
     youtube_id: "VFM-3nU6b4E"
     description: >
       In this first episode, we build the complete authentication foundation for KlipShow — a Twitch platform where viewers pay to trigger social media clips on stream. Includes full Twitch OAuth, JWT session management, Vite + React + Tailwind setup, and backend tests.
@@ -67,7 +67,7 @@ episodes:
         link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=4799s"
       - label: "1:26:11 – Outro"
         link: "https://www.youtube.com/watch?v=VFM-3nU6b4E&t=5171s"
-  - title: "Building ClipShow Episode 2: Dashboard Architecture + Clips System + Database Design"
+  - title: "Building KlipShow Episode 2: Dashboard Architecture + Clips System + Database Design"
     youtube_id: "ZxOR8sH5WsU"
     description: >
       In this power-packed episode, we build the core dashboard infrastructure and complete clips management system for ClipShow — where Twitch viewers pay real money to display social media clips on live streams!
@@ -132,7 +132,7 @@ episodes:
         link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=3456s"
       - label: "01:04:53 - Outro"
         link: "https://www.youtube.com/watch?v=ZxOR8sH5WsU&t=3893s"
-  - title: "Building ClipShow Episode 3: TikTok API Integration + Public Clip Library + Hybrid Architecture"
+  - title: "Building KlipShow Episode 3: TikTok API Integration + Public Clip Library + Hybrid Architecture"
     youtube_id: "ilkYtP70s20"
     description: >
       In this marathon episode, we achieve a major milestone - building the complete public clip library system for ClipShow where Twitch viewers pay real money to display social media clips on live streams!
@@ -190,6 +190,125 @@ episodes:
         link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=6150s"
       - label: "01:48:15 - Episode wrap-up and next steps"
         link: "https://www.youtube.com/watch?v=ilkYtP70s20&t=6495s"
+  - title: "Building KlipShow Episode 4: Real-Time WebSocket Alerts + OBS Integration + AnyCable Architecture"
+    youtube_id: "UftT4YiIla8"
+    description: >
+      This episode gets us to a working MVP — streamers can now receive real-time clip alerts in OBS when viewers interact with their stream! Features include AnyCable replacing ActionCable for massive WebSocket scaling, secure token-based authentication without traditional login flows, live OBS integration demo, HTTP broadcast method for Redis deprecation-proofing, professional error handling, real-time testing for streamers, and production-ready encryption for sensitive alert tokens.
+    tech_stack:
+      - Ruby on Rails 8.0.2
+      - AnyCable for WebSocket scaling
+      - ActionCable with HTTP broadcast
+      - React with WebSocket integration
+      - TikTok iframe API with post-message
+      - PostgreSQL
+      - Docker Compose multi-service setup
+      - RSpec + Capybara + Cuprite
+      - Tailwind CSS
+    highlights:
+      - AnyCable replaces ActionCable for massive WebSocket scaling potential!
+      - Secure token-based authentication without traditional login flows
+      - Live OBS integration demo - clips actually playing on stream!
+      - HTTP broadcast method future-proofs against Redis deprecation
+      - Smart time-boxing decisions - knowing when to move forward
+      - Professional error handling across WebSocket connections
+      - Real-time testing functionality for streamers to preview alerts
+      - Production-ready encryption for sensitive alert tokens
+      - This episode gets us to a working MVP - streamers can now receive real-time clip alerts in OBS when viewers interact with their stream!
+    timestamps:
+      - label: "0:00 – Episode recap and Chrome debugging issues overview"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=0s"
+      - label: "1:15 – Lessons learned about time-boxing and resource management"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=75s"
+      - label: "2:30 – Overview of current testing specs and functionality"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=150s"
+      - label: "3:45 – Reviewing streamer clip upload and sharing functionality"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=225s"
+      - label: "4:30 – Explaining the clip library and shareable flag system"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=270s"
+      - label: "5:15 – Demo of dynamic clip adding without page reloads"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=315s"
+      - label: "6:00 – Walkthrough of system specs and mock OAuth implementation"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=360s"
+      - label: "7:30 – OAuth controller deep dive and Twitch integration"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=450s"
+      - label: "8:45 – Mocking HTTP requests for testing"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=525s"
+      - label: "9:30 – Factory usage and test database management"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=570s"
+      - label: "11:00 – Current Docker setup without remote Chrome debugging"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=660s"
+      - label: "11:45 – Chromium installation in Docker container"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=705s"
+      - label: "12:15 – Decision to move forward with current working solution"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=735s"
+      - label: "13:00 – Planning the OBS browser source integration"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=780s"
+      - label: "14:15 – Adding alert_token to streamers table"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=855s"
+      - label: "15:30 – Database migration and indexing considerations"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=930s"
+      - label: "16:45 – Strong migrations gem and concurrent indexing"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1005s"
+      - label: "18:00 – Encryption setup for alert tokens"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1080s"
+      - label: "19:30 – Creating the widgets controller and routes"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1170s"
+      - label: "20:45 – Setting up authenticated vs unauthenticated endpoints"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1245s"
+      - label: "22:00 – Building the widget URL display component"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1320s"
+      - label: "23:15 – Implementing copy-to-clipboard functionality"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1395s"
+      - label: "24:30 – Adding reset token functionality"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1470s"
+      - label: "25:45 – Using Cursor AI for UI component generation"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1545s"
+      - label: "27:00 – Refining the widget preview interface"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1620s"
+      - label: "28:15 – Adding OBS integration instructions"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1695s"
+      - label: "29:30 – Implementing the token reveal/hide functionality"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1770s"
+      - label: "31:00 – Architecture overview: Heroku apps and scaling strategy"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1860s"
+      - label: "33:15 – AnyCable connection and authentication setup"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=1995s"
+      - label: "35:00 – Troubleshooting Redis vs HTTP broadcast methods"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2100s"
+      - label: "36:45 – WebSocket connection establishment and testing"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2205s"
+      - label: "38:30 – Building the test clip functionality"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2310s"
+      - label: "40:00 – TikTok iframe integration and autoplay handling"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2400s"
+      - label: "41:15 – Post-message event handling for TikTok player"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2475s"
+      - label: "42:30 – Opacity transitions and display timing"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2550s"
+      - label: "44:00 – Setting up browser source in OBS"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2640s"
+      - label: "45:15 – Live demonstration of test clip triggering"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2715s"
+      - label: "46:00 – Audio and video synchronization issues"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2760s"
+      - label: "46:45 – Successful proof of concept completion"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2805s"
+      - label: "47:30 – Removing Redis dependency and simplifying setup"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2850s"
+      - label: "49:00 – AnyCable YAML configuration walkthrough"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=2940s"
+      - label: "50:15 – Docker compose service configuration"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=3015s"
+      - label: "51:30 – HTTP broadcast URL setup and port configuration"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=3090s"
+      - label: "52:45 – Final OBS demonstration with working alerts"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=3165s"
+      - label: "53:30 – Reflecting on time management and technical decisions"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=3210s"
+      - label: "54:15 – Planning future development priorities"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=3255s"
+      - label: "54:45 – Moving toward MVP completion"
+        link: "https://www.youtube.com/watch?v=UftT4YiIla8&t=3285s"
 ---
 
 <section class="project-detail">
@@ -288,18 +407,23 @@ episodes:
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.toggle-details-btn').forEach(button => {
-      button.addEventListener('click', () => {
-        const details = button.previousElementSibling;
-        if (details.classList.contains('expanded')) {
-          details.classList.remove('expanded');
-          button.textContent = 'See More';
-        } else {
-          details.classList.add('expanded');
-          button.textContent = 'See Less';
-        }
-      });
+  document.querySelectorAll('.toggle-details-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const details = button.previousElementSibling;
+
+      if (details.classList.contains('expanded')) {
+        // Collapse: reset max-height to 0 and remove class
+        details.style.maxHeight = '0px';
+        details.classList.remove('expanded');
+        button.textContent = 'See More';
+      } else {
+        // Expand: set max-height to the scrollHeight so content fits perfectly
+        details.style.maxHeight = details.scrollHeight + 'px';
+        details.classList.add('expanded');
+        button.textContent = 'See Less';
+      }
     });
   });
+});
 </script>
 
