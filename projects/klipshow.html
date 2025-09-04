@@ -375,6 +375,91 @@ episodes:
         link: "https://www.youtube.com/watch?v=DrRNj0jE2aM&t=3775s"
       - label: "76:56 – Episode wrap-up and next steps"
         link: "https://www.youtube.com/watch?v=DrRNj0jE2aM&t=4616s"
+  - title: "Building KlipShow Episode 6: Production Deployment with Kamal + CI/CD Pipeline + Critical Bug Fixes"
+    youtube_id: jFSKGiOXlqA
+    description: >
+      In this episode, we tackle mysterious WebSocket authentication issues, deploy to production with Kamal on DigitalOcean, and build a complete CI/CD pipeline with GitHub Actions. Plus, we fix critical performance bugs and add validation to prevent duplicate klips!
+    tech_stack:
+      - Kamal deployment tool from 37signals
+      - DigitalOcean droplets for hosting
+      - GitHub Actions for CI/CD automation
+      - Docker Hub for container registry
+      - Let's Encrypt for SSL certificates
+      - AnyCable with HTTP RPC for WebSockets
+      - PostgreSQL with Docker accessories
+      - React with useCallback for performance
+      - Vite for asset compilation
+      - RSpec with system tests
+    highlights:
+      - Paranormal WebSocket issues: cookies don't work across different hosts!
+      - useCallback hook prevents exponential performance degradation
+      - Kamal automatically handles SSL certificates with zero configuration
+      - GitHub Actions secrets bridge to Kamal deployment secrets
+      - Custom validation shows clickable links in error messages
+      - Chrome DevTools remote debugging with OBS browser sources
+      - Rails master key workaround for asset precompilation
+      - Network aliases for Docker container communication
+      - Staging environment live at staging.klipshow.io
+      - Complete CI/CD: test on PR, deploy on merge
+    timestamps:
+      - label: "0:00 – Intro & Weird Integration Test Issues"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=0s"
+      - label: "2:15 – WebSocket Authentication Problem Discovery"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=135s"
+      - label: "4:30 – Cookie-Based Auth Breaking Across Different Hosts"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=270s"
+      - label: "6:45 – Fixing AnyCable Authentication with Alert Tokens"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=405s"
+      - label: "9:00 – Chrome Dev Tools Remote Debugging with OBS"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=540s"
+      - label: "11:30 – React useCallback Hook Performance Fix"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=690s"
+      - label: "14:15 – Setting Up DigitalOcean Droplet ($7/month)"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=855s"
+      - label: "16:00 – Introduction to Kamal Deployment Tool"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=960s"
+      - label: "18:30 – Configuring deploy.yaml for Kamal"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=1110s"
+      - label: "21:00 – Setting Up SSL with Let's Encrypt (Automatic)"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=1260s"
+      - label: "23:30 – Docker Registry Configuration"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=1410s"
+      - label: "25:45 – PostgreSQL Accessory Setup"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=1545s"
+      - label: "28:00 – AnyCable Service Configuration"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=1680s"
+      - label: "31:00 – Network Aliases & RPC Communication Fix"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=1860s"
+      - label: "34:00 – Vite Asset Compilation Issues & Solutions"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=2040s"
+      - label: "37:30 – Rails Master Key Workaround for Asset Precompile"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=2250s"
+      - label: "40:00 – First Successful Deployment to Staging"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=2400s"
+      - label: "42:15 – SSH Access & Monitoring with Kamal Logs"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=2535s"
+      - label: "44:30 – Live Demo - Green Screen Klips Working"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=2670s"
+      - label: "46:00 – Bug Fix: Preventing Duplicate Klips"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=2760s"
+      - label: "48:30 – Custom Validation with URL Generation"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=2910s"
+      - label: "51:00 – GitHub Actions CI Workflow Setup"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=3060s"
+      - label: "53:30 – Configuring Test Environment with Services"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=3210s"
+      - label: "56:00 – Debugging GitHub Actions with SSH"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=3360s"
+      - label: "58:30 – Screenshot Artifacts for Failed Tests"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=3510s"
+      - label: "1:00:00 – Deploy Workflow Configuration"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=3600s"
+      - label: "1:02:30 – Bridging GitHub Secrets to Kamal"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=3750s"
+      - label: "1:05:00 – Final Working CI/CD Pipeline"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=3900s"
+      - label: "1:07:00 – Future Plans & Wrap Up"
+        link: "https://www.youtube.com/watch?v=jFSKGiOXlqA&t=4020s"
 ---
 
 <section class="project-detail">
